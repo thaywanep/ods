@@ -1,0 +1,197 @@
+html, body {
+    margin: 0; /* Remove margens para ocupar todo o espaço disponível */
+    padding: 0; /* Remove preenchimento */
+}
+
+header {
+    background-color: #4ebbe6;
+    color: white;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10; /* todos os elementos ficar abaixo do menu*/
+    top: 0;
+    left: 0;
+}
+
+#logo {
+    width: 100px;
+    position: absolute;
+    top: 7px;
+    margin-left: 5%;
+}
+
+#menu {
+    float: right;
+    margin-right: 5%;
+    list-style: none; /* tirando a bolinha da lista*/
+    margin-top: 0px;
+}
+
+a {
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+li {
+    float: left; /*coloca os elementos da lista um do lado do outro*/
+    padding: 20px 10px 20px 10px;
+    color: white;
+}
+
+li:hover { /*passa o mouse em cima muda a cor de fundo*/
+    background-color: #5DD4c1;
+}
+
+#imagem_fundo {
+    background: url("./img/fundo1.jpg");
+    height: 100vh; /* A imagem ocupará 100% da altura da janela de visualização */
+    background-size: cover; /* ajustar o tamanho da imagem */
+    background-position: center; /* posicionar a imagem */
+    background-repeat: no-repeat; /* evitar repetição da imagem */
+    text-align: center;
+}
+
+#titulo {
+    color: white;
+    padding-top: 20%;
+    font-size: 60px;
+}
+
+#subtitulo {
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#acao {
+    color: white;
+    border: 1px white solid;
+    padding: 10px 20px 10px 20px;
+}
+
+.icone {
+    width: 100px;
+}
+
+section {
+    padding: 20px;
+    float: left; /*organiza leiaut*/
+}
+
+.destaque {
+    background-color: #0dbedd2d;
+}
+
+.destaque p {
+    font-size: 20px;
+}
+
+.coluna h3 {
+    font-size: 30px;
+}
+
+section h3 {
+    font-size: 30px;
+}
+
+#odstodos {
+    padding-top: 20px;
+}
+
+#sealife img {
+    padding-top: 10px;
+    border-radius: 30%;
+
+}
+
+.image {
+    background-image: url(./img/fundo4.jpg);
+    height: 100%; /* A imagem ocupará 100% da altura da janela de visualização */
+    width: auto;
+    background-size: cover; /* ajustar o tamanho da imagem */
+    background-position: center; /* posicionar a imagem */
+    background-repeat: no-repeat; /* evitar repetição da imagem */
+}
+
+.info {
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #46f2c48a;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#ods14 img {
+    padding-left: 35%;
+    padding-right: 35%;
+    width: 400px;
+    height: 400px;
+}
+
+.imgeco {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.coluna {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+}
+
+.dois {
+    width: 40%;
+}
+
+.quatro {
+    width: 15%;
+}
+
+.tres {
+    width: 29%;
+    padding: 0 2%;
+}
+
+.justificado {
+    text-align: justify;
+}
+
+.centralizado {
+    text-align: center;
+}
+
+footer {
+    background-color: #01AAEA;
+    float: left; /* esquema de layout*/
+    color: white;
+    padding-left: 5%;
+    width: 95%;
+}
+
+/*responsivo*/
+@media all and (max-width: 768px) {
+    menu {
+        visibility: hidden; /*desaparece o menu*/
+    }
+    .coluna, .dois, .tres, .quatro {
+        display: block; /*se comportar em blocos inteiros ao invés de flutuar*/
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+    #logodiv {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        padding: 0px;
+    }
+    #logo {
+        margin-left: 0;
+        transform: translateX(-50%);
+    }
+}
